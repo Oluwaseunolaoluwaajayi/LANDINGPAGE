@@ -18,8 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: black;
-
+  background-color: #f8f9fa;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -28,7 +27,7 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: 600;
-  color: orange;
+  color: #2c3e50;
 }
 
 .nav ul {
@@ -42,7 +41,7 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #2c3e50;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -259,7 +258,7 @@ body {
 /* Button Container */
 .button-container {
   padding: 2rem 1rem;
-  background-color: black;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -281,12 +280,13 @@ body {
   align-items: center;
   justify-content: center;
   color: #555;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .button-wrapper button:hover {
   background-color: #26a69a;
   color: white;
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .button-wrapper button svg {
@@ -524,17 +524,15 @@ body {
     height: 300px;
   }
 
-  /* Tablet Styles (min-width: 768px) */
-  @media (min-width: 768px) {
-    .button-wrapper button {
-      width: 50px; /* Slightly larger on tablet */
-      height: 50px;
-    }
+  /* Button Container */
+  .button-wrapper button {
+    width: 50px; /* Slightly larger on tablet */
+    height: 50px;
+  }
 
-    .button-wrapper button svg {
-      width: 24px;
-      height: 24px;
-    }
+  .button-wrapper button svg {
+    width: 24px;
+    height: 24px;
   }
 
   /* Ideal Property Section */
